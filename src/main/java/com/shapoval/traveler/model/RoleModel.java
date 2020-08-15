@@ -5,7 +5,7 @@ import com.shapoval.traveler.entity.Role;
 public class RoleModel {
     private long roleId;
     private String roleName;
-
+//add comment
     public RoleModel() {
     }
 
