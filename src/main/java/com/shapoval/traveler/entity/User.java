@@ -44,7 +44,7 @@ public class User {
         this.userPhone = user.getUserPhone();
         this.email = user.getEmail();
         this.password = user.getPassword();
-        this.role = user.getRole();
+        this.role = new Role(user.getRole());
     }
 
     public long getUserId() {

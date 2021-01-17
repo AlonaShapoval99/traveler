@@ -9,13 +9,13 @@ public class UserModel {
     private String userPhone;
     private String email;
     private String password;
-    private Role role;
+    private RoleModel role;
 
     public UserModel() {
     }
 
     public UserModel(long userId, String userName, String userPhone, String email, String password,
-                     Role role) {
+                     RoleModel role) {
         this.userId = userId;
         this.userName = userName;
         this.userPhone = userPhone;
@@ -30,7 +30,7 @@ public class UserModel {
         this.userPhone = user.getUserPhone();
         this.email = user.getEmail();
         this.password = user.getPassword();
-        this.role = user.getRole();
+        this.role = new RoleModel(user.getRole());
     }
 
     public long getUserId() {
@@ -73,11 +73,11 @@ public class UserModel {
         this.password = password;
     }
 
-    public Role getRole() {
+    public RoleModel getRole() {
         return role;
     }
 
-    public void setRole(Role role) {
+    public void setRole(RoleModel role) {
         this.role = role;
     }
 

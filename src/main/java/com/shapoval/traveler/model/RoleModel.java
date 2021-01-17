@@ -5,7 +5,7 @@ import com.shapoval.traveler.entity.Role;
 public class RoleModel {
     private long roleId;
     private String roleName;
-//add comment
+
     public RoleModel() {
     }
 
@@ -24,7 +24,7 @@ public class RoleModel {
     }
 
     public void setRoleId(long roleId) {
-        roleId = roleId;
+        this.roleId = roleId;
     }
 
     public String getRoleName() {
@@ -32,6 +32,6 @@ public class RoleModel {
     }
 
     public void setRoleName(String roleName) {
-        roleName = roleName;
+        this.roleName = roleName;
     }
 }
