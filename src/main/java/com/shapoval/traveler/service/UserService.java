@@ -1,8 +1,9 @@
 package com.shapoval.traveler.service;
 
+import com.shapoval.traveler.entity.User;
 import com.shapoval.traveler.model.UserModel;
 
-public interface UserService  {
+public interface UserService {
     UserModel loginUser(String password, String email);
 
     UserModel addUser(UserModel user);
@@ -10,4 +11,6 @@ public interface UserService  {
     UserModel updateUser(UserModel user);
 
     void deleteUser(long id);
+
+    User findUserByLogin(String login);
 }

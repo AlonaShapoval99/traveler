@@ -7,7 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({"com.shapoval.traveler.service", "com.shapoval.traveler.service.implementation", "com.shapoval.traveler.controllers"})
+@ComponentScan({"com.shapoval.traveler.service", "com.shapoval.traveler.service.implementation",
+        "com.shapoval.traveler.controllers","com.shapoval.traveler.config",
+        "com.shapoval.traveler.config.jwt"})
 @EntityScan(basePackages = {"com.shapoval.traveler.entity"})
 @EnableJpaRepositories(basePackages = {"com.shapoval.traveler.repository"})
 public class TravelerApplication {
